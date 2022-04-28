@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cedvel</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../javascripts/bundel.js"></script>
+</head>
+<body>
+  <button class="pre-btn btn-danger btn">PDF</button>
+  <div class="modal">
+    <div class="inner">
+      <div class="col-12 m-0 justify-content-end close">x</div>
+
+      <div class="inputs col-10 p-2 ">
+        <input type="text" placeholder="Məhsul Adı" id="product_name_edit" class="form-control m-1">
+        <input type="text" placeholder="Sayı" id="product_count_edit" class="form-control m-1">
+        <input type="text" placeholder="Qiyməti" id="product_price_edit" class="form-control m-1">
+        <input type="text" placeholder="Qeyd" id="notes_edit" class="form-control m-1">
+        <button class="btn edit-btn m-1 btn-secondary">Düzəlt</button>
+    </div>
+    </div>
+  </div>
+  <div class="inputs col-10 p-2 d-flex align-items-center">
+    <input type="text" placeholder="Məhsul Adı" id="product_name" class="form-control m-1">
+    <input type="text" placeholder="Sayı" id="product_count" class="form-control m-1">
+    <input type="text" placeholder="Qiyməti" id="product_price" class="form-control m-1">
+    <input type="text" placeholder="Qeyd" id="notes" class="form-control m-1">
+    <button class="btn add-btn m-1 btn-success">Əlavə et!</button>
+</div>
+    <main id="mainContainer">
+        
+        <table class="table mt-2">
+            <thead>
+              <tr>
+                <th scope="col">Məhsul Adı</th>
+                <th scope="col">Sayı</th>
+                <th scope="col">Qiyməti</th>
+                <th scope="col">Qeyd</th>
+                <th scope="col" class="text-center">Sil</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+       <div class="col-12 d-flex justify-content-between">
+        <div class="contain-infos">
+          Mehsul sayi:<span class="product-count">0</span>
+        </div>   
+        <div class="contain-infos">
+          Mehsul deyeri : <span class="product-price">0</span>
+        </div>
+       </div>
+          
+    </main>
+    <script src="../javascripts/resetdata.js"></script>
+</body>
+
+</html>
